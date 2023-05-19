@@ -1,0 +1,113 @@
+#services{
+    padding: 100px 0;
+    .service_item{
+        .serv_img{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            padding: 0 40px;
+            
+            a{
+                color: #f04336;
+                font-size: 20px;
+                font-weight: 800;
+                text-transform: capitalize;
+                background: #fff;
+                padding: 10px 20px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+            }
+        }
+       .ser_breed{
+           background: url('../images/breed_services_bg.jpg');
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           width: 100%;
+           height: 91%;
+           padding: 44px;
+           h2{
+            color: #fff;
+            font-size: 18px;
+            font-weight: 900;
+            text-transform: capitalize;
+            position: relative;
+            padding-left: 10px;
+            &::before{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 2px;
+                background: #fff;
+            }
+           }
+           h3{
+            color: #fff;
+            font-size: 40px;
+            font-weight: 900;
+            text-transform: capitalize;
+            padding: 20px 0;
+           }
+           p{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+            padding:10px 0;
+           }
+           a{
+            color: #f04336;
+            font-size: 20px;
+            font-weight: 800;
+            text-transform: capitalize;
+            background: #fff;
+            padding: 10px 20px;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+
+            &::before{
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                height: 0;
+                width: 100%;
+                background: #0a303a;
+                border-radius: 30px 30px 0 0;
+                transition: .5s;
+                -webkit-transition: .5s;
+                -moz-transition: .5s;
+                -ms-transition: .5s;
+                -o-transition: .5s;
+                -webkit-border-radius: 30px 30px 0 0;
+                -moz-border-radius: 30px 30px 0 0;
+                -ms-border-radius: 30px 30px 0 0;
+                -o-border-radius: 30px 30px 0 0;
+                z-index: -1;
+            }
+            i{
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+            }
+            &:hover::before{
+                height: 150%;
+            }
+            &:hover{
+                color: #fff;
+            }
+           }
+       } 
+    }
+}

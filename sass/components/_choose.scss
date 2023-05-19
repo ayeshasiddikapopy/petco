@@ -1,0 +1,20 @@
+#chooses{
+   background: url('../images/counter_bg.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
+   width: 100%;
+   padding: 100px 0;
+   .choose_items{
+       .header{
+           padding-bottom: 100px ;  
+        }
+        .counter-item{
+            p{
+                font-size: 16px;
+                
+            }
+        }
+   }
+}

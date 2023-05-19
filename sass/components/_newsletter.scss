@@ -1,0 +1,97 @@
+#newsletter{
+    padding-bottom:100px ;
+    .newslatter_item{
+        background: url("../images/newsletter_bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        padding: 50px ;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        .newlater_content{
+            h2{
+                color: #fff;
+                font-size: 40px;
+                font-weight: 900;
+                text-transform: capitalize; 
+            }
+            p{
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+        }
+        .newslater_form{ 
+            input{
+                flex-grow: 1;
+                border: none;
+                background: #fff;
+                clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+                padding: 21px 30px;
+                color: #676666;
+                font-size: 14px;
+                border-radius: 10px 10px 35px 10px;
+                
+                &::placeholder{
+                    font-size: 14px;
+                    color: #676666;
+                    opacity: .72;
+                    
+                }
+            }
+            .btn{
+               font-weight: 600;
+                background: #fff;
+                color: #f04336;
+                min-width: 219px;
+                text-align: center;
+                justify-content: center;
+                padding: 21px 30px;
+                min-height: 63px;
+                clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+                border-radius: 35px 10px 10px 10px;
+                position: relative;
+                overflow: hidden;
+
+                    &::before{
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    height: 0;
+                    width: 110%;
+                    background: #0a303a;
+                    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+                    border-radius: 30px 30px 0 0;
+                    transition: .5s;
+                    -webkit-transition: .5s;
+                    -moz-transition: .5s;
+                    -ms-transition: .5s;
+                    -o-transition: .5s;
+                    -webkit-border-radius: 30px 30px 0 0;
+                    -moz-border-radius: 30px 30px 0 0;
+                    -ms-border-radius: 30px 30px 0 0;
+                    -o-border-radius: 30px 30px 0 0;
+                    z-index: -1;
+                }
+             &:hover::before{
+                height: 150%;
+             }    
+            }
+        }
+        .news_shap{
+            position: absolute;
+            top: 10%;
+            left: -9%;
+        }
+        .shap_tow{
+            position: absolute;
+            top: 10%;
+            right: -11%;
+        }
+    }
+}

@@ -1,0 +1,218 @@
+#navigation{
+    .nav_item{
+        background: #F4F1EA;
+        margin: 0 30px;
+        border-radius:  0 0 20px 20px ;
+        -webkit-border-radius:  0 0 20px 20px ;
+        -moz-border-radius:  0 0 20px 20px ;
+        -ms-border-radius:  0 0 20px 20px ;
+        -o-border-radius:  0 0 20px 20px ;
+    ul{
+        
+        li{
+            color: #0a303a;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+            text-transform: capitalize;  
+        }
+    }
+    span{
+        color: #0a303a;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        line-height: 19.5px;
+    }
+    .icon{
+        font-size: 12px;
+        color: #0a303a;
+        line-height: 19.5px;
+        i{
+            padding: 0 5px;
+        }
+    }
+  }
+}
+#main_menu{
+    padding: 10px 0;
+    position: relative;
+    nav{
+        // .navbar{
+        //     .navbar-brand{
+        //         .menu-logo{
+
+        //             img{
+
+        //             }
+        //         }
+        //     }
+            
+        // }
+        .navbar-nav{
+                .nav-item{
+                    padding:10px;
+                   .nav-link{
+                        color: #0a303a;
+                        font-size: 16px;
+                        font-weight: 800;
+                        font-family: 'Nunito', sans-serif;
+                        text-transform: capitalize;
+                        position: relative;
+                        z-index: 4;
+
+                        &::before{
+                            position: absolute;
+                            content: '';
+                            top: 0;
+                            left: 0;
+                            height:100%;
+                            width: 100%;
+                            background: #f04336;
+                            clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+                            border-radius: 10px 10px 20px 20px;
+                            -webkit-border-radius: 10px 10px 20px 20px;
+                            -moz-border-radius: 10px 10px 20px 20px;
+                            -ms-border-radius: 10px 10px 20px 20px;
+                            -o-border-radius: 10px 10px 20px 20px;
+                            transition: .4s;
+                            z-index: -1;
+                            opacity: 0;
+                            -webkit-transition: .4s;
+                            -moz-transition: .4s;
+                            -ms-transition: .4s;
+                            -o-transition: .4s;
+}  
+                        &:hover::before ,&:hover{
+                            opacity: 1;
+                            color: #fff;
+                        }   
+
+                    }
+                }
+            }
+    }
+    .menu_inner{
+           padding: 10px;
+           position: relative;
+           .menu_ico{
+                   i{
+                   margin: 0 20px;
+                    font-size: 16px;
+                    color: #0a303a;
+                }
+                .btn-primary {
+                    color: #fff;
+                    background-color: #fff;
+                    border-color: #fff;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                  }
+                  .offcanvas-top {
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    height: 100vh;
+                    max-height: 100%;
+                    border-bottom: 1px solid #fff;
+                    
+                  }
+                  .offcanvas {
+                    position: fixed;
+                    bottom: 0;
+                    z-index: 1050;
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 100%;
+                    visibility: hidden;
+                    background-color: #ffffffed;
+                    background-clip: padding-box;
+                    outline: 0;
+                    transition: transform .3s ease-in-out;
+                  }
+                  .offcanvas{
+                     
+                      h3{
+                          color: #0A303A;
+                          font-size: 47px;
+                          font-weight: 600;
+                          text-transform: capitalize;
+                          text-align: center;
+                          font-family: 'Poppins', sans-serif;
+                          padding: 200px 0 100px 0;
+                      }
+                      input{
+                        text-align: center;
+                          display:inline-block;
+                          height: 77px;
+                          width:1200px;
+                          margin:0 150px;
+                          border: none;
+                          border-bottom: 1px solid #f04336;
+                         background: #ffffff3d;
+                      }
+                      i{
+                          position: relative;
+                          top: -8%;
+                          left: 80%;
+                          font-size: 25px;
+                          color: #f04336;
+                          cursor: pointer;
+                      }
+
+                  }
+            }
+
+            a{
+            padding: 15px 20px;
+            background:#f04336;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: capitalize;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            text-align: center;
+
+            &::before{
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                height: 0;
+                width: 100%;
+                background: #0a303a;
+                border-radius: 30px 30px 0 0;
+                transition: .5s;
+                -webkit-transition: .5s;
+                -moz-transition: .5s;
+                -ms-transition: .5s;
+                -o-transition: .5s;
+                -webkit-border-radius: 30px 30px 0 0;
+                -moz-border-radius: 30px 30px 0 0;
+                -ms-border-radius: 30px 30px 0 0;
+                -o-border-radius: 30px 30px 0 0;
+                z-index: -1;
+            }
+            &:hover::before{
+                height: 130%;  
+            }
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 30%;
+            height: 90%;
+            width: 2px;
+            background: rgb(197, 197, 197);
+        }
+    }
+    .menu_img{
+        position: absolute;
+        top: 70%;
+    }
+}
